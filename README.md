@@ -42,8 +42,17 @@ The **Smart Irrigation System** is an IoT-based project designed to automate and
 2. Attach the pump, fan, and heater to their respective output pins.  
 3. Ensure a stable power supply for all components.  
 
-### Software Setup:  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/<your-username>/smart-irrigation-system.git
+### Code Setup  
+1. The project file contains fully commented code to help you set up the system step-by-step.  
+2. Follow these steps to configure the code:
+**Code Setup:**
+-Open the code in the Arduino IDE or your preferred editor.
+-Update the following sections in the code:
+. Wi-Fi Credentials: Replace with your Wi-Fi SSID and password.
+. ThingSpeak API Key: Replace with your ThingSpeak Write API key.
+. Threshold Values: Adjust the thresholds for soil moisture, temperature, and humidity as per your requirements.
+3. **Upload Code**:
+Connect your ESP32 to your computer and upload the code using the Arduino IDE.
+
+
 
