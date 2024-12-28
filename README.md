@@ -1,5 +1,49 @@
-# Smart-Irrigation-System
-## Overview 
-This smart irrigation system project leverages an ESP32 microcontroller integrated with various IoT sensors to ensure optimal agricultural conditions. It monitors soil moisture and automatically activates a water pump when the moisture level drops below a set threshold. To manage environmental temperature, the system uses a DHT11(temperature) sensor: when the temperature rises too high, a fan is triggered to cool the area, and when it falls too low, a heater is activated to maintain optimal warmth. This automated approach ensures efficient water usage and temperature regulation, making it a reliable solution for modern farming.
-## Real time Monitoring 
-It Provides real-time data on soil moisture, temperature, and humidity through sensors, accessible via an interface
+# Smart Irrigation System  
+
+## Overview  
+The **Smart Irrigation System** is an IoT-based project designed to automate and optimize the irrigation process while maintaining a suitable environment for plants. This system uses multiple sensors and actuators to monitor and control soil moisture, temperature, and humidity. It provides real-time updates through a web application and uploads data to the cloud for analytics.  
+
+## Features  
+- **Automated Irrigation**:  
+  - Monitors soil moisture levels and activates a pump to water plants when needed.  
+- **Environmental Control**:  
+  - Activates a fan to cool down the environment if the temperature is too high.  
+  - Turns on a heater to prevent frost damage during low temperatures.  
+- **Web Application**:  
+  - Displays real-time status of:  
+    - Soil moisture percentage.  
+    - Temperature and humidity levels.  
+    - Pump Status.  
+- **Cloud Integration**:  
+  - Data is uploaded to **ThingSpeak** for historical analysis and visualization.  
+
+## Technology Stack  
+- **Hardware**:  
+  - ESP32 (microcontroller)  
+  - DHT11 Sensor (temperature and humidity)  
+  - Soil Moisture Sensor  
+  - Pump, Fan, and Heater  
+- **Software**:  
+  - Web Application for real-time monitoring  
+  - ThingSpeak for cloud data analytics  
+
+## Functionality  
+1. The system monitors environmental conditions using IoT sensors.  
+2. Based on predefined thresholds:  
+   - Activates the pump when soil moisture is below the threshold.  
+   - Triggers the fan to cool the surroundings if the temperature is high.  
+   - Turns on the heater to maintain a suitable temperature during colder conditions.  
+3. Displays real-time data on the web interface.  
+4. Uploads sensor data to ThingSpeak for advanced insights.  
+
+## Installation and Setup  
+### Hardware Setup:  
+1. Connect the sensors (DHT11 and soil moisture) to the ESP32 microcontroller.  
+2. Attach the pump, fan, and heater to their respective output pins.  
+3. Ensure a stable power supply for all components.  
+
+### Software Setup:  
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/<your-username>/smart-irrigation-system.git
+
